@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Make sure the body fills the screen */
+    font-family: Arial, sans-serif;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    background: url('gem.jpg') no-repeat center center/cover; /* Background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(12, 239, 247);
+}
+
+/* Hero content (text) */
+.hero-content {
+    z-index: 2;
+    max-width: 80%; /* Limit the width of the content */
+}
+
+/* Heading style */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph style */
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Transparent PNG image at the bottom-right corner */
+.hero-image {
+    position: absolute;
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    width: 150px; /* Set the size of the image */
+    z-index: 1; /* Ensure the image is behind the text */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 100px; /* Smaller size for mobile */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Sallmeuu Website!</h1>
+            <p>Your journey to a world of possibilities begins here. Let's explore together!</p>
+        </div>
+        <img src="gem.jpg" alt="Transparent Image" class="hero-image">
+    </section>
+</body>
+</html>
